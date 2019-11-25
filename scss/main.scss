@@ -1,0 +1,68 @@
+/** COMPILED FROM SCSS SOURCE. DO NOT EDIT DIRECTLY */
+//
+// SCSS SOURCE FILE - comment above will be rendered to css file - please
+//	disregard it and only edit this file.
+//
+
+/*
+ * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━ʕ•㉨•ʔ━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+ *   												 IMPORTS
+ * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━ ☆ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+*/
+
+// *+:｡.｡　Variables　｡.｡:+*
+@import "_mm_vars"; // *+:｡.｡　Font Families　｡.｡:+*
+@import 'https://fonts.googleapis.com/css?family=Bungee|Raleway:400,400i,700,700i';
+
+/*
+ * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━ʕ•㉨•ʔ━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+ *   												  GLOBAL
+ * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━ ☆ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+*/
+
+// *+:｡.｡　Used by jQuery　｡.｡:+*
+#isMobile {
+	visibility: hidden;
+	float: none;
+}
+
+#isTablet {
+	visibility: hidden;
+	float: none;
+}
+
+#doParallax {
+	visibility: hidden;
+	float: none;
+}
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	line-height: 1.5em;
+}
+
+img {
+	border: none;
+}
+
+ul {
+	list-style: none;
+
+	li::before {
+		content: "\2022";
+		// *+:｡.｡　\2022 is the unicode for a bullet　｡.｡:+*
+		color: $crimson;
+		font-weight: bold;
+		display: inline-block;
+		// *+:｡.｡　Creates space betwen bullet and text　｡.｡:+*
+		width: 1em;
+		// *+:｡.｡　Also needed for spacing　｡.｡:+*
+		margin-left: -1em;
+		// *+:｡.｡　Also needed for spacing　｡.｡:+*
+	}
+}

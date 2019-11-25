@@ -1,0 +1,79 @@
+/*
+ * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━ʕ•㉨•ʔ━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+ *   											   VARIABLES
+ * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━ ☆ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ */
+
+
+/*
+ * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━ʕ•㉨•ʔ━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+ *   											   COLORS
+ * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━ ☆ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ */
+
+
+// *+:｡.｡　Define colors　｡.｡:+*
+
+$crimson: #9C0204;
+$navy: #101920;
+$black: #000;
+$white: #FFF;
+$offWhite: #F4F4F4;
+
+// *+:｡.｡　Store in list　｡.｡:+*
+
+$colors: (
+  "crimson": $crimson,
+  "navy": $navy,
+  "black": $black,
+  "white": $white,
+  "offWhite": $offWhite
+) !default;
+
+
+// *+:｡.｡　Create classes for each color　｡.｡:+*
+@each $color_name, $color in $colors {
+  .#{$color_name} {
+    background-color: $color;
+  }
+  .#{$color_name}-text {
+    color: $color;
+  }
+}
+
+/*
+ * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━ʕ•㉨•ʔ━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+ *   											    IMAGES
+ * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━ ☆ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ */
+
+$imgPath: '/images';
+
+/*
+ * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━ʕ•㉨•ʔ━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+ *   											  TYPOGRAPHY
+ * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━ ☆ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ */
+
+// fonts and typefaces
+$fontHeading: 'Bungee', serif;
+$fontPrimary: 'Raleway', serif;
+
+/*
+ * ┏━━━━━━━━━━━━━━━━━━━━━━━━━━ʕ•㉨•ʔ━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+ *   										     TOP BAR
+ * ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━ ☆ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ */
+$topBarHeight: 70px;
+$topBarMobileHeight: 60px;
+
+$defaultTopBarColorBG: $crimson;
+$defaultTopBarColorControlOff: $white;
+$defaultTopBarColorControlOn: $white;
+$defaultTopBarColorTextOff: $white;
+$defaultTopBarColorTextOn: $white;
+
+$progressBarHeight: 10px;
+$defaultTopBarSidePadding: 10px;
+$defaultTopBarColorProgressBG: $white;
+$defaultTopBarColorProgressBar: $navy;
